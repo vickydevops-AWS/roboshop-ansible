@@ -7,7 +7,7 @@
 
 
 - name: install nginx
-  ansible.builtin.shell: 
+  ansible.builtin.dnf: 
     name: nginx 
     state: latest
 
