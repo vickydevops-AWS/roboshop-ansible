@@ -1,5 +1,5 @@
 - name: frontend playbook
   hosts: all
-  brcome: true 
+  become: true 
   roles: 
     - frontend 
