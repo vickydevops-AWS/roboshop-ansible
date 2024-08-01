@@ -19,11 +19,11 @@
 
 
 # APP_PREREQ
-#
+
 - name: start nginx service
   ansible.builtin.systemd_service:
-    state: restarted
     name: nginx
+    state: restarted
     enabled: true 
 
    
