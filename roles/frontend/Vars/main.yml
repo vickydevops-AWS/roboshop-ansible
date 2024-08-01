@@ -1,0 +1,2 @@
+app_path: /usr/share/ngnix/html
+components: frontend 

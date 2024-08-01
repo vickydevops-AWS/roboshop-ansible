@@ -18,13 +18,14 @@
     dest:  /etc/nginx/nginx.conf 
 
 
-# APP_PREREQ
-#
+- name: setup pp-prerequistes
+  ansible.builtin.include_role:
+    name: common
+    tasks_from: app-prereq
 
 - name: Start Nginx service
   ansible.builtin.systemd_service:
     state: restarted
     name: nginx
     enabled: true 
-
    
