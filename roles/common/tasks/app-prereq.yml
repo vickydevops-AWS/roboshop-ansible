@@ -2,7 +2,6 @@
    ansible.builtin.user:
     name: roboshop
   
-  
 
  - name: remove old content
    ansible.builtin.file:
